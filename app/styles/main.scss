@@ -1,0 +1,254 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+$purple: rgba(93, 37, 163, 1.0); //#7f47aa;
+$olive: rgba(121, 152, 29, 0.5);
+$seagreen: rgb(37,179,181); //rgb(0,185,184); //rgb(37,179,181);
+
+
+body {
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body, html{
+  height:100%;
+}
+
+a{
+  color: $purple;
+}
+
+.margin-row{
+  padding-top: 2vh;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.no-pad{
+  padding: 0px;
+}
+
+.active{
+  font-weight: bold !important;
+}
+
+.app-bg{
+  background: url('../images/bamboo-bg.jpg');
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.main-logo{
+  width: 100%;
+  margin-top: 14%;
+  padding: 34px;
+}
+
+ul.main-nav-list{
+  list-style: none;
+  line-height: 5vh;
+  font-size: 85%;
+  padding-left: 13%;
+  padding-top: 31px;
+  padding-bottom: 50px;
+  max-height: 35vh;
+  background: rgba(121, 152, 29, 0.2);
+  a{
+    color: $purple;
+    font-size: 11px;
+  }
+  li{
+    margin-bottom: -10px;
+  }
+}
+
+.main-nav-list-container{
+  padding-top: 9vh;
+}
+
+.main-bar{
+  margin-top: 15%;
+  height: 50%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.main-left{
+  height: 46vh;
+  // margin-top: 2vh;
+  width: 100%;
+  background-color: $purple; //rgba(93, 37, 163, 1.0);
+}
+
+.main-nav{
+  height: 46vh;
+  // margin-top: 2vh; 
+  width: 100%;
+  // min-width: 90px;
+  background-color: $olive;
+}
+
+.sub-nav{
+  list-style: none;
+  padding-left: 10px;
+  line-height: 25px;
+}
+
+.sub-sub-nav{
+  list-style: none;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  line-height: 25px;
+}
+
+.main-right{
+  height: 46vh;
+  width: 63vh;
+  // margin-top: 2vh;
+  border: 23px solid $purple; //rgba(93, 37, 163, 1.0); 
+  position: relative;
+  z-index: 5;
+}
+
+.main-right-white{
+  height: 46vh;
+  width: 63vh;
+  // margin-top: 2vh;
+  border: 23px solid white; //rgba(93, 37, 163, 1.0); 
+  position: relative;
+  z-index: 5;
+}
+
+.main-right-white-square{
+  height: 46vh;
+  width: 46vh;
+  // margin-top: 2vh;
+  border: 23px solid white; //rgba(93, 37, 163, 1.0); 
+  position: relative;
+  z-index: 5;
+}
+
+.main-right-white-square-video{
+  // width: 556px;
+  // height: 46vh;
+  // margin-top: 2vh;
+  border: 18px solid white; //rgba(93, 37, 163, 1.0); 
+  // position: relative;
+  background-color: white;
+  padding-bottom: 59.25%;
+  // z-index: 5;
+}
+    
+// Portfolio
+
+.carousel-control.left{
+  background-image: none;
+  left: -8px;
+}
+.carousel-control.right{
+  background-image: none;
+  right:-8px;
+}
+
+.carousel-control .glyphicon-menu-left {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.carousel-control .glyphicon-menu-right, .carousel-control .glyphicon-menu-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    z-index: 5;
+    display: inline-block;
+}
+
+.icon-next, .carousel-control .glyphicon-menu-right {
+    right: 50%;
+    margin-right: -10px;
+}
+
+.carousel-control {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    font-size: 20px;
+    color: white;
+}
+
+//End Portfolio
+
+//Bio
+
+.bio-content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 25.5vh;
+    margin-top: 6vh;
+    background: rgba(121, 152, 29, 0.5);
+    font-size: 11px;
+    line-height: 22px;
+    color: #5d25a3;
+    padding: 2.5vh 1vw;
+}
+
+.contact-content{
+    margin-top: 6%;
+    color: $purple;
+    padding: 4vh 1vw;
+}
+
+//End Bio
+
+// Radio
+.radio-bg {
+    background: url("../images/radio-bg.jpg");
+    background-size: 50%;
+    /* margin-top: 10px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 96%;
+    background-color: rgb(37,179,181);
+    height: 40vh;
+    width: 40vh;
+    z-index: 1;
+    position: absolute;
+    /* padding: 54px; */
+}
+
+audio{
+  width:250px;
+  height:25px;
+
+}
+
+// tv
+
+.metal-bg {
+   background: url("../images/brushedmetal.png");
+    padding: 18px;
+    background-repeat: repeat;
+    // margin-top: 2vh;
+    width: 46.666667%;
+}
+  
+// end tv
+
+// End Radio
+
+
+/* Responsive: Portrait tablets and up */
+@media only screen and (max-width: $screen-md) {
+  ul.main-nav-list a {
+      color: #5d25a3;
+      font-size: 9px;
+  }
+
+  ul.main-nav-list {
+    font-size: 85%;
+    white-space: nowrap;
+   }
+ }

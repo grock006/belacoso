@@ -34,6 +34,10 @@ a{
   font-weight: bold !important;
 }
 
+.video-width{
+  width: 40.866667%;
+}
+
 .app-bg{
   background: url('../images/bamboo-bg.jpg');
   background-size: cover;
@@ -43,9 +47,12 @@ a{
 
 .main-logo{
   width: 100%;
-  margin-top: 14%;
-  padding: 34px;
+  margin-top: 5.9vh;
+  padding: 2.5vw;
 }
+
+// margin-top: 5.7vh; 14
+// padding: 2.5vw; 34px
 
 ul.main-nav-list{
   list-style: none;
@@ -139,8 +146,13 @@ ul.main-nav-list{
   border: 18px solid white; //rgba(93, 37, 163, 1.0); 
   // position: relative;
   background-color: white;
-  padding-bottom: 59.25%;
+  height: 46vh;
+  // padding-bottom: 59.25%;
   // z-index: 5;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 58.25%;
 }
     
 // Portfolio
@@ -204,19 +216,33 @@ ul.main-nav-list{
 //End Bio
 
 // Radio
+
 .radio-bg {
     background: url("../images/radio-bg.jpg");
-    background-size: 50%;
-    /* margin-top: 10px; */
+    background-size: 67%;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 96%;
-    background-color: rgb(37,179,181);
+    background-position-y: 90%;
+    background-color: #25b3b5;
     height: 40vh;
     width: 40vh;
     z-index: 1;
+    top: 0px;
+    bottom: 0px;
     position: absolute;
-    /* padding: 54px; */
+}
+
+.radio-bg-color{
+  background-color: #25b3b5;
+}
+
+h5.radio-text{
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+
+h5.radio-text:first-child{
+  margin-top: 8px;
 }
 
 audio{
@@ -232,13 +258,32 @@ audio{
     padding: 18px;
     background-repeat: repeat;
     // margin-top: 2vh;
-    width: 46.666667%;
+      height: 46vh;
+       width: 75vh;
+}
+
+.main-right-white-square-video{
+  // width: 556px;
+  // height: 46vh;
+  // margin-top: 2vh;
+  border: 18px solid white; //rgba(93, 37, 163, 1.0); 
+  // position: relative;
+  background-color: white;
+  height: 46vh;
+  // padding-bottom: 59.25%;
+  // z-index: 5;
+      width: 75vh;
 }
   
 // end tv
 
 // End Radio
 
+@media (min-width: 1350px){
+  .radio-bg{
+    background-size: 75%;
+  }
+}
 
 /* Responsive: Portrait tablets and up */
 @media only screen and (max-width: $screen-md) {
@@ -250,5 +295,26 @@ audio{
   ul.main-nav-list {
     font-size: 85%;
     white-space: nowrap;
+     li{
+        margin-bottom: -15px;
+      }
    }
+
+   .contact-content {
+     margin-top: 2%;
+   }
+
+   audio {
+    width: 200px;
+    height: 20px;
+  }
+
+  .main-right-white-square {
+    border: 18px solid white;
+  }
+
+  .video-width{
+    width: 47.3%;
+  }
+
  }

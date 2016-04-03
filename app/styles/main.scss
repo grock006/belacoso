@@ -2,9 +2,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-$purple: rgba(93, 37, 163, 1.0); //#7f47aa;
+$purple: rgba(93, 37, 163, 1.0); 
 $olive: rgba(121, 152, 29, 0.5);
-$seagreen: rgb(37,179,181); //rgb(0,185,184); //rgb(37,179,181);
+$seagreen: rgb(37,179,181); 
 $light-purple: rgba(93, 37, 163, 0.8);
 
 
@@ -63,11 +63,7 @@ a{
     width: 175%;
     margin-top: -31%;
     margin-left: -19%;
-    /* padding: 2.5vw; */
 }
-
-// margin-top: 5.7vh; 14
-// padding: 2.5vw; 34px
 
 ul.main-nav-list{
   list-style: none;
@@ -100,16 +96,13 @@ ul.main-nav-list{
 
 .main-left{
   height: 46vh;
-  // margin-top: 2vh;
   width: 100%;
-  background-color: $light-purple; //rgba(93, 37, 163, 1.0);
+  background-color: $light-purple; 
 }
 
 .main-nav{
   height: 46vh;
-  // margin-top: 2vh; 
   width: 100%;
-  // min-width: 90px;
   background-color: $olive;
 }
 
@@ -130,8 +123,7 @@ ul.main-nav-list{
 .main-right{
   height: 46vh;
   width: 63vh;
-  // margin-top: 2vh;
-  border: 23px solid $light-purple; //rgba(93, 37, 163, 1.0); 
+  border: 23px solid $light-purple; 
   position: relative;
   z-index: 5;
 }
@@ -139,8 +131,7 @@ ul.main-nav-list{
 .main-right-white{
   height: 46vh;
   width: 63vh;
-  // margin-top: 2vh;
-  border: 23px solid white; //rgba(93, 37, 163, 1.0); 
+  border: 23px solid white; 
   position: relative;
   z-index: 5;
 }
@@ -148,22 +139,15 @@ ul.main-nav-list{
 .main-right-white-square{
   height: 46vh;
   width: 46vh;
-  // margin-top: 2vh;
-  border: 23px solid white; //rgba(93, 37, 163, 1.0); 
+  border: 23px solid white; 
   position: relative;
   z-index: 5;
 }
 
 .main-right-white-square-video{
-  // width: 556px;
-  // height: 46vh;
-  // margin-top: 2vh;
-  border: 18px solid white; //rgba(93, 37, 163, 1.0); 
-  // position: relative;
+  border: 18px solid white; 
   background-color: white;
   height: 46vh;
-  // padding-bottom: 59.25%;
-  // z-index: 5;
 }
 
 .embed-responsive-16by9 {
@@ -270,11 +254,10 @@ audio{
 
 }
 
-// tv
+// tv & sales
 
 .metal-bg {
     background: url("../images/bm-frame.png");
-    // padding: 18px;
     background-repeat: no-repeat;
     background-size: contain;
     max-height: 46vh;
@@ -293,16 +276,10 @@ audio{
 }
 
 .main-right-white-square-video{
-  // width: 556px;
-  // height: 46vh;
-  // margin-top: 2vh;
   border: 18px solid white; //rgba(93, 37, 163, 1.0); 
-  // position: relative;
   background-color: white;
   height: 46vh;
-  // padding-bottom: 59.25%;
-  // z-index: 5;
-      width: 75vh;
+  width: 75vh;
 }
   
 // end tv
@@ -321,6 +298,14 @@ audio{
   margin-left: -1vw;
 }
 
+.wide-width{
+  width: 76vh;
+}
+
+.wider-width{
+  width:75vh;
+}
+
 .art-inner{
   background: url("../images/canvas-bg-full.png");
   background-repeat: no-repeat;
@@ -331,9 +316,36 @@ audio{
   position: relative;
 }
 
+.art-inner-image{
+  margin: 0 auto;
+  height: 41vh;
+  width: 35vh;
+  margin-top: 6vh;
+}
+
+.art-carousel-left{
+  position:absolute;
+  top:50%;
+  left:3vw;
+  color:white;
+  font-size: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+}
+
+.art-carousel-right{
+  position:absolute;
+  top:50%;
+  right:4vw;
+  color:white;
+  font-size: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+}
+
 // end art
 
-// End Radio
+// 
 
 @media (min-width: 1350px){
   .radio-bg{
@@ -375,7 +387,6 @@ audio{
 
  }
 
- /* Responsive: Portrait tablets and up */
 @media only screen and (max-width: $screen-xs) {
   .app-bg {
     background: url("../images/bamboo-bg.jpg");

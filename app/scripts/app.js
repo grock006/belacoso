@@ -15,9 +15,13 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.bootstrap',
-    'ui.bootstrap.tpls'
+    'ui.bootstrap.tpls',
+    'bootstrapLightbox'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, LightboxProvider) {
+      LightboxProvider.fullScreenMode = true;
+      LightboxProvider.templateUrl = '../views/lightbox.html';
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -46,8 +50,8 @@ angular
       })
       .when('/art', {
         templateUrl: 'views/art.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
       })
       .when('/sales', {
         templateUrl: 'views/sales.html',

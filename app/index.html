@@ -8,6 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -23,18 +24,20 @@
    <div class="main-bar">
       <div class="row margin-row">
         <div class="col-sm-2 no-pad"></div>
-        <div class="col-sm-3 no-pad" style="width:24%">
+        <div class="col-sm-3 col-xs-5 no-pad main-right-width">
           <div class="main-left">
-            <img src="images/logo.png" class="main-logo">
+            <img src="images/logo.svg" class="main-logo">
           </div>
           </div>
-          <div class="col-sm-1 no-pad" style="margin-right:1vw;width: 9.333333%;">
+          <div class="col-sm-1 col-xs-5 no-pad left-margin">
             <div class="main-nav">
               <div class="main-nav-list-container" ng-controller="NavCtrl">
               <ul class="main-nav-list">
                 <li><a href="#" ng-href="#/" ng-class="{'active':isActive('/')}">BIO</a></li>
-                <li><a href="" ng-href="#/portfolio" ng-class="{'active':isActive('/portfolio')}">PORTFOLIO</a></li>
+                <li><a href="" ng-href="#/portfolio" ng-class="{'active':isActive('/portfolio') }">
+                  PORTFOLIO</a></li>
                     <ul class="sub-nav ng-hide" ng-show="portfolio">
+                      <li><a ng-href="#/portfolio" ng-class="{'active':isActive('/portfolio')}">Print</a></li>
                       <li><a ng-href="#/radio" ng-class="{'active':isActive('/radio')}">Radio</a></li>
                       <li><a ng-href="#/sales1" ng-click="sales = !sales" 
                         ng-class="{'active':isActive('/sales1')}">Sales Video</a></li>
@@ -52,11 +55,11 @@
             </div>
           </div>
        <!--  <div class="col-sm-4 no-pad"> -->
-          <div style="margin-left:1vw;">
+          <div class="middle-seperator">
             <div ng-view=""></div>
           </div>
     <!--     </div> -->
-        <div class="col-sm-2 no-pad"></div>
+<!--         <div class="col-sm-2 no-pad"></div> -->
       </div>
     
     
@@ -73,6 +76,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

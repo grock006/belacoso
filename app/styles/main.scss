@@ -5,6 +5,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $purple: rgba(93, 37, 163, 1.0); //#7f47aa;
 $olive: rgba(121, 152, 29, 0.5);
 $seagreen: rgb(37,179,181); //rgb(0,185,184); //rgb(37,179,181);
+$light-purple: rgba(93, 37, 163, 0.8);
 
 
 body {
@@ -35,7 +36,20 @@ a{
 }
 
 .video-width{
-  width: 40.866667%;
+  width: 41.366667%;
+}
+
+.left-margin{
+  margin-right:1vw;
+  width: 9.333333%;
+}
+
+.main-right-width{
+  width:24%;
+}
+
+.middle-seperator{
+  margin-left:1vw;
 }
 
 .app-bg{
@@ -46,9 +60,10 @@ a{
 }
 
 .main-logo{
-  width: 100%;
-  margin-top: 5.9vh;
-  padding: 2.5vw;
+    width: 175%;
+    margin-top: -31%;
+    margin-left: -19%;
+    /* padding: 2.5vw; */
 }
 
 // margin-top: 5.7vh; 14
@@ -87,7 +102,7 @@ ul.main-nav-list{
   height: 46vh;
   // margin-top: 2vh;
   width: 100%;
-  background-color: $purple; //rgba(93, 37, 163, 1.0);
+  background-color: $light-purple; //rgba(93, 37, 163, 1.0);
 }
 
 .main-nav{
@@ -116,7 +131,7 @@ ul.main-nav-list{
   height: 46vh;
   width: 63vh;
   // margin-top: 2vh;
-  border: 23px solid $purple; //rgba(93, 37, 163, 1.0); 
+  border: 23px solid $light-purple; //rgba(93, 37, 163, 1.0); 
   position: relative;
   z-index: 5;
 }
@@ -191,6 +206,11 @@ ul.main-nav-list{
     color: white;
 }
 
+.carousel-override{
+  margin-top: -1vh; 
+  padding: 25px;
+}
+
 //End Portfolio
 
 //Bio
@@ -218,11 +238,10 @@ ul.main-nav-list{
 // Radio
 
 .radio-bg {
-    background: url("../images/radio-bg.jpg");
-    background-size: 67%;
+    background: url("../images/radio-bg.png");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 90%;
     background-color: #25b3b5;
     height: 40vh;
     width: 40vh;
@@ -254,12 +273,23 @@ audio{
 // tv
 
 .metal-bg {
-   background: url("../images/brushedmetal.png");
-    padding: 18px;
-    background-repeat: repeat;
-    // margin-top: 2vh;
-      height: 46vh;
-       width: 75vh;
+    background: url("../images/bm-frame.png");
+    // padding: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 46vh;
+    height: 46vh;
+    width: 45%;
+}
+
+.metal-inner{
+  margin-top: 2.5vh;
+  max-height: 41vh;
+  height: 41vh;
+  max-width: 71.5vh;
+  margin-left: -0.2vw;
+  position: relative;
+  background-color: black;
 }
 
 .main-right-white-square-video{
@@ -277,11 +307,37 @@ audio{
   
 // end tv
 
+// art
+
+.art-bg {
+  background: url("../images/art-frame.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-height: 46vh;
+  height: 46vh;
+  position: absolute;
+  width: 100%;
+  margin-top: -2vh;
+  margin-left: -1vw;
+}
+
+.art-inner{
+  background: url("../images/canvas-bg-full.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 42vh;
+  height: 42vh;
+  margin-top: 2vh;
+  position: relative;
+}
+
+// end art
+
 // End Radio
 
 @media (min-width: 1350px){
   .radio-bg{
-    background-size: 75%;
+    background-size: 100%;
   }
 }
 
@@ -318,3 +374,56 @@ audio{
   }
 
  }
+
+ /* Responsive: Portrait tablets and up */
+@media only screen and (max-width: $screen-xs) {
+  .app-bg {
+    background: url("../images/bamboo-bg.jpg");
+    height: 105vh;
+  }
+
+  .middle-seperator {
+    margin-left: 0vw;
+  }
+
+  .margin-row {
+      padding-top: 0vh;
+  }
+
+  .main-right-width {
+      width: 70%;
+      margin-bottom: 2vh;
+  }
+
+  .left-margin {
+      margin-right: 1vw;
+      width: 28.333333%;
+  }
+
+  .main-bar {
+      margin-top: 4vh;
+      height: 0;
+      width: 100vw;
+      margin-left: 3vw;
+      background-color: transparent;
+  }
+
+  .main-right-white {
+    width: 55vh;
+  }
+
+  .main-right {
+    width: 55vh;
+  }
+
+  .main-right-white-square{
+    width: 55vh;
+    height:48vh;
+  }
+
+  .carousel-override{
+    margin-top: -5vh;
+    padding: 35px;
+  }
+
+}

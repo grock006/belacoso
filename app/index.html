@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <!--    <meta name="viewport" content="width=device-width"> -->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -23,7 +24,9 @@
    <!--  <div class="container"> -->
    <div class="main-bar">
       <div class="row margin-row">
-        <div class="col-sm-2 no-pad"></div>
+        <div class="col-sm-2 no-pad hidden-xs"></div>
+        <!-- desktop nav-->
+        <div class="hidden-xs">
         <div class="col-sm-3 col-xs-5 no-pad main-right-width">
           <div class="main-left">
             <img src="images/logo.svg" class="main-logo">
@@ -54,10 +57,53 @@
             </div>
             </div>
           </div>
-          <!-- nav views  -->
-          <div class="middle-seperator">
-            <div ng-view=""></div>
           </div>
+          <!-- end desktop nav -->
+          <!-- mobile nav -->
+          <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+            <div class="main-left">
+              <img src="images/logo.svg" class="main-logo">
+            </div>
+            <div class="main-nav">
+              <div class="main-nav-list text-center" ng-controller="NavCtrl">
+                <div class="row">
+                <!--   <div class="col-xs-1 no-pad"></div> -->
+                  <div class="col-xs-2" style="padding-left: 10vw">
+                    <li><a href="#" ng-href="#/" ng-class="{'active':isActive('/')}">BIO</a></li>
+                  </div>
+                  <div class="col-xs-3">
+                    <li><a href="" ng-href="#/portfolio" ng-class="{'active':isActive('/portfolio') }">PORTFOLIO</a></li>
+                    <ul class="sub-nav ng-hide" ng-show="portfolio">
+                      <li><a ng-href="#/portfolio" ng-class="{'active':isActive('/portfolio')}">Print</a></li>
+                      <li><a ng-href="#/radio" ng-class="{'active':isActive('/radio')}">Radio</a></li>
+                      <li><a ng-href="#/sales1" ng-click="sales = !sales" 
+                        ng-class="{'active':isActive('/sales1')}">Sales Video</a></li>
+                      <li><a ng-href="#/tv" ng-class="{'active':isActive('/tv')}">TV</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-3">
+                    <li><a ng-href="#/art" ng-class="{'active':isActive('/art')}">ART GALLERY</a></li>
+                    <ul class="sub-nav ng-hide" ng-show="sales">
+                     <li><a>&nbsp;</a></li>
+                     <li><a></a></li>
+                     <li><a ng-href="#/sales1" ng-class="{'active':isActive('/sales1')}">Pom #1</a></li>
+                     <li><a ng-href="#/sales2" ng-class="{'active':isActive('/sales2')}">Pom #2</a></li>
+                     <li><a ng-href="#/sales3" ng-class="{'active':isActive('/sales3')}">Pom #3</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-3" style="padding-left: 5vw">
+                    <li><a ng-href="#/contact" ng-class="{'active':isActive('/contact')}">CONTACT</a></li>
+                  </div>
+               <!--    <div class="col-xs-2 no-pad"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end mobile nav -->
+          <!-- nav views  -->
+     <!--      <div class="middle-seperator">
+            <div ng-view=""></div>
+          </div> -->
           <!-- end nav views -->
       </div>
     

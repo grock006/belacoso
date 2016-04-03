@@ -19,6 +19,9 @@ body, html{
 
 a{
   color: $purple;
+  &:hover, &:focus, &:visited, &:active{
+    color: $purple;
+  }
 }
 
 .margin-row{
@@ -390,11 +393,63 @@ audio{
 @media only screen and (max-width: $screen-xs) {
   .app-bg {
     background: url("../images/bamboo-bg.jpg");
-    height: 105vh;
+    height: 200vh;
   }
 
   .middle-seperator {
     margin-left: 0vw;
+  }
+
+  .main-left {
+      height: 25vh;
+      width: 100%;
+      background-color: rgba(93, 37, 163, 0.8);
+  }
+
+  .main-logo {
+      width: 175%;
+      margin-top: -42%;
+      margin-left: -19%;
+  }
+
+  .main-nav {
+    height: 25vh;
+    width: 100%;
+    background-color: rgba(121, 152, 29, 0.5);
+    position: relative;
+  }
+
+  .main-nav-list{
+    position: absolute;
+    background-color: rgba(121, 152, 29, 0.2);
+    height: 85%;
+    width: 90%;
+    top: 7%;
+    left: 5%;
+    padding-top: 3vh;
+    list-style: none;
+    white-space: nowrap;
+    font-size: 12px;
+    li:before {
+         content:'\2022';
+         display: block;
+         position: relative;
+         max-width: 0px;
+         max-height: 0px;
+         left: -10px;
+         top: -3px;
+         color: $purple;
+         font-size: 16px;
+       }
+      .col-xs-2 li:before{
+        display: none;
+      }
+      .sub-nav{
+        text-align: left;
+        li:before{
+          display: none;
+        }
+      }
   }
 
   .margin-row {
@@ -415,7 +470,7 @@ audio{
       margin-top: 4vh;
       height: 0;
       width: 100vw;
-      margin-left: 3vw;
+      margin-left: 0vw;
       background-color: transparent;
   }
 

@@ -20,7 +20,7 @@ angular
   ])
   .config(function ($routeProvider, LightboxProvider) {
       LightboxProvider.fullScreenMode = true;
-      LightboxProvider.templateUrl = '../views/lightbox.html';
+      LightboxProvider.templateUrl = 'views/lightbox.html';
 
     $routeProvider
       .when('/', {

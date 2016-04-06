@@ -12,9 +12,6 @@ angular.module('tonygApp')
 
     $('#carousel-portfolio').carousel();
 
-  	$scope.test = '../../images/logo.png';
-  	$animate.enabled(true); 
-
     $scope.images = [
                       "images/portfolio/bcc_donate.png", 
                       "images/portfolio/bcc_logo.png", 

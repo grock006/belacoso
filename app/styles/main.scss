@@ -395,7 +395,7 @@ audio{
 
  }
 
-@media only screen and (max-width: $screen-xs) {
+@media only screen and (max-width: $screen-sm) {
   .app-bg {
     background: url("../images/bamboo-bg.jpg");
     height: 200vh;
@@ -513,5 +513,69 @@ audio{
     margin-top: -5vh;
     padding: 35px;
   }
+
+  .wide-width {
+      width: 53vh;
+  }
+
+  .art-inner {
+      height: 29vh;
+      margin-top: 4vh;
+      padding-left: 1vw;
+      margin-left: 3vw;
+    }
+
+    .art-inner-image {
+        width: 21vh;
+
+    }
+
+    .main-right-white {
+        height: 42vh;
+        width: 52vh;
+        border: 18px solid white;
+        position: relative;
+        z-index: 5;
+        margin-left: 4vw;
+        margin-top: 2vh;
+    }
+
+    .wider-width {
+        width: 52vh;
+        margin-top: 2vh;
+        margin-left: 4vw;
+    }
+
+    .metal-inner{
+      height: 25vh;
+    }
+
+    .main-right-white-square {
+        height: 47vh;
+    }
+
+    h5.radio-text {
+        margin-bottom: 10px;
+    }
+
+    audio {
+        width: 250px;
+    }
+
+    .radio-bg{
+      width: 46vh;
+    }
+
+    .contact-content {
+        padding: 4vh 3vw;
+    }
+
+    .bio-content{
+      padding: 2.5vh 4vw;
+    }
+
+    .sub-nav {
+        line-height: 17px;
+    }
 
 }

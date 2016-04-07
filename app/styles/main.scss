@@ -401,6 +401,11 @@ audio{
     height: 200vh;
   }
 
+  .pad-mobile{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .middle-seperator {
     margin-left: 0vw;
   }
@@ -414,7 +419,7 @@ audio{
   .main-logo {
       width: 175%;
       margin-top: -48%;
-      margin-left: -19%;
+      margin-left: -22%;
   }
 
   .main-nav {
@@ -515,39 +520,53 @@ audio{
   }
 
   .wide-width {
-      width: 53vh;
+      width: 94%;
   }
 
   .art-inner {
-      height: 29vh;
+      height: 30vh;
       margin-top: 4vh;
       padding-left: 1vw;
       margin-left: 3vw;
     }
 
     .art-inner-image {
-        width: 21vh;
+       width: 35%;
 
+    }
+
+    .art-bg{
+      max-height: 35vh;
+      height: 35vh;
+      margin-left: 0;
     }
 
     .main-right-white {
         height: 42vh;
-        width: 52vh;
+        width: 100%;
         border: 18px solid white;
         position: relative;
         z-index: 5;
-        margin-left: 4vw;
+        // margin-left: 4vw;
         margin-top: 2vh;
     }
 
     .wider-width {
-        width: 52vh;
+        width: 100%;
         margin-top: 2vh;
         margin-left: 4vw;
     }
 
     .metal-inner{
       height: 25vh;
+      width: 92%;
+      margin-top: 6%;
+    }
+
+    .metal-bg{
+      max-height: 32vh;
+      height: 32vh;
+      background-size: 92%;
     }
 
     .main-right-white-square {
@@ -560,6 +579,7 @@ audio{
 
     audio {
         width: 250px;
+        height:40px;
     }
 
     .radio-bg{
@@ -567,7 +587,7 @@ audio{
     }
 
     .contact-content {
-        padding: 4vh 3vw;
+        padding: 5vh 4vw;
     }
 
     .bio-content{

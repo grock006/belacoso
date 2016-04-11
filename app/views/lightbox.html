@@ -3,6 +3,10 @@
     ng-swipe-right="Lightbox.prevImage()">
   <!-- navigation -->
   <div class="lightbox-nav">
+    <!-- caption -->
+    <button class="close lightbox-caption">{{Lightbox.imageCaption}}</button>
+
+
     <!-- close button -->
     <button class="close" aria-hidden="true" ng-click="$dismiss()">×</button>
 
@@ -24,7 +28,7 @@
 
   <div class="lightbox-image-container">
     <!-- caption -->
- <!--    <div class="lightbox-image-caption">
+<!--     <div class="lightbox-image-caption">
       <span>{{Lightbox.imageCaption}}</span>
     </div> -->
 

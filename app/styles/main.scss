@@ -7,6 +7,10 @@ $olive: rgba(121, 152, 29, 0.5);
 $seagreen: rgb(37,179,181); 
 $light-purple: rgba(93, 37, 163, 0.8);
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 
 body {
   padding: 0;
@@ -22,6 +26,40 @@ a{
   &:hover, &:focus, &:visited, &:active{
     color: $purple;
   }
+}
+
+a.cursor-pointer {
+  cursor: pointer;
+}
+
+.enlarge-text{
+  position: absolute;
+  bottom: -20px;
+  left: 29%;
+  font-size: 78%;
+  color: $purple;
+}
+
+.lightbox-image-caption {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    margin: 0.5em 0.9em;
+    color: rgba(0,0,0,0.8);
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: left;
+    text-shadow: 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5);
+}
+
+.lightbox-nav .lightbox-caption{
+  left: 0;
+  opacity: 0.6;
+  font-weight: bold;
+  font-size: 14px;
+  top: 5px;
+  text-transform: uppercase;
+  right: initial;
 }
 
 .margin-row{
@@ -596,6 +634,11 @@ audio{
 
     .sub-nav {
         line-height: 17px;
+    }
+
+    .lightbox-nav .lightbox-caption {
+        font-size: 8px;
+        top:7px;
     }
 
 }

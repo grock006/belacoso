@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="tonygApp" class="app-bg">
+  <body ng-app="tonygApp" class="app-bg ng-cloak">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -40,7 +40,7 @@
                 <li><a href="" ng-href="#/portfolio" ng-class="{'active':isActive('/portfolio') }">
                   PORTFOLIO</a></li>
                     <ul class="sub-nav ng-hide" ng-show="portfolio">
-                      <li><a ng-href="#/portfolio" ng-class="{'active':isActive('/portfolio')}">Print</a></li>
+                      <li><a ng-href="#/portfolio" ng-class="{'active':isActive('/portfolio')}">Print/Online</a></li>
                       <li><a ng-href="#/radio" ng-class="{'active':isActive('/radio')}">Radio</a></li>
                       <li><a ng-href="#/sales1" ng-click="sales = !sales" 
                         ng-class="{'active':isActive('/sales1')}">Sales Video</a></li>

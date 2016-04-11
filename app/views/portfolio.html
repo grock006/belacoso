@@ -1,32 +1,37 @@
 <div class="col-sm-4 col-xs-12 no-pad mobile-pad">
- <div class="main-right-white-square">
- <div id="carousel-portfolio" class="carousel slide print-outer" data-ride="carousel" data-interval="2000">
+  <div class="main-right-white-square">
+    <div id="carousel-portfolio" class="carousel slide print-outer" data-ride="carousel" data-interval="2000">
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-       <a ng-click="openFirstIncludedLightboxModal('0')">
-      <img src="images/portfolio/bcc_banners.png" alt="..." style="width:100%">
-    </a>
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item" ng-repeat="image in images">
-       <a ng-click="openLightboxModal($index)">
-        <img ng-src="{{image}}" alt="..." style="width:100%">
-      </a>
-      <div class="carousel-caption">
-      </div>
-    </div>
-  </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+             <a class="cursor-pointer" ng-click="openFirstIncludedLightboxModal('0')">
+            <img src="images/portfolio/bcc_banners.png" alt="..." style="width:100%">
+          </a>
+            <div class="carousel-caption">
+            </div>
+          </div>
+      <div class="item" ng-repeat="image in images">
+             <a class="cursor-pointer" ng-click="openLightboxModal($index)">
+              <img ng-src="{{image}}" alt="..." style="width:100%">
+            </a>
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
 
   <!-- Controls -->
-  <span class="left carousel-control" href="#carousel-portfolio" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </span>
-  <span class="right carousel-control" href="#carousel-portfolio" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-</span>
-</div>
+    <span class="left carousel-control" href="#carousel-portfolio" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </span>
+    <span class="right carousel-control" href="#carousel-portfolio" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </span>
+    <!-- end Controls -->
+    </div>
+    <!-- text -->
+    <div class="enlarge-text">CLICK IMAGE TO ENLARGE</div>
+    <!-- end text -->
+  </div>
 </div>

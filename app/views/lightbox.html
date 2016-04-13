@@ -4,7 +4,7 @@
   <!-- navigation -->
   <div class="lightbox-nav">
     <!-- caption -->
-    <button class="close lightbox-caption">{{Lightbox.imageCaption}}     <i class="fa fa-camera-retro"></i></button>
+    <button class="close lightbox-caption">{{Lightbox.imageCaption}}</button>
 
 
 
@@ -27,18 +27,16 @@
     </div>
   </div>
 
-  <div class="lightbox-image-container">
+  <div class="lightbox-image-container" style="position:relative;z-index:10">
     <!-- caption -->
 <!--     <div class="lightbox-image-caption">
       <span>{{Lightbox.imageCaption}}</span>
     </div> -->
 
     <!-- image -->
-<!--     <img ng-if="!Lightbox.isVideo(Lightbox.image)"
-        lightbox-src="{{Lightbox.imageUrl}}"> -->
-       <!--  <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
-        <span class="sr-only">Loading...</span> -->
-
+       <img lightbox-src="{{Lightbox.imageUrl}}" style="z-index:1000;position:relative"> 
+    <i ng-if="!LightBox.imageUrl" class="fa fa-circle-o-notch fa-spin fa-4x fa-fw margin-bottom" style="position: absolute;top: 40%;left: 47%;z-index:100"></i>
+        <span class="sr-only">Loading...</span>
 
     <!-- video -->
     <div ng-if="Lightbox.isVideo(Lightbox.image)"

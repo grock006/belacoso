@@ -4,7 +4,8 @@
   <!-- navigation -->
   <div class="lightbox-nav">
     <!-- caption -->
-    <button class="close lightbox-caption">{{Lightbox.imageCaption}}</button>
+    <button class="close lightbox-caption">{{Lightbox.imageCaption}}     <i class="fa fa-camera-retro"></i></button>
+
 
 
     <!-- close button -->
@@ -33,8 +34,11 @@
     </div> -->
 
     <!-- image -->
-    <img ng-if="!Lightbox.isVideo(Lightbox.image)"
-        lightbox-src="{{Lightbox.imageUrl}}">
+<!--     <img ng-if="!Lightbox.isVideo(Lightbox.image)"
+        lightbox-src="{{Lightbox.imageUrl}}"> -->
+       <!--  <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
+        <span class="sr-only">Loading...</span> -->
+
 
     <!-- video -->
     <div ng-if="Lightbox.isVideo(Lightbox.image)"

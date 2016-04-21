@@ -16,11 +16,15 @@ angular
     'ngTouch',
     'ui.bootstrap',
     'ui.bootstrap.tpls',
-    'bootstrapLightbox'
+    'bootstrapLightbox',
+    'angular-loading-bar'
   ])
-  .config(function ($routeProvider, LightboxProvider) {
+  .config(function ($routeProvider, LightboxProvider, cfpLoadingBarProvider) {
       LightboxProvider.fullScreenMode = true;
       LightboxProvider.templateUrl = 'views/lightbox.html';
+      cfpLoadingBarProvider.includeBar = false;
+      cfpLoadingBarProvider.parentSelector = '#loading-bar-container';
+      cfpLoadingBarProvider.includeSpinner = false;
 
     $routeProvider
       .when('/', {

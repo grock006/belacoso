@@ -28,15 +28,22 @@
   </div>
 
   <div class="lightbox-image-container" style="position:relative;z-index:10">
+    <i class="fa fa-refresh fa-spin fa-3x" 
+         style="font-size:80px;z-index:5;position:absolute;top:7%;left:47%"></i>
     <!-- caption -->
 <!--     <div class="lightbox-image-caption">
       <span>{{Lightbox.imageCaption}}</span>
     </div> -->
 
     <!-- image -->
-       <img lightbox-src="{{Lightbox.imageUrl}}" style="z-index:1000;position:relative"> 
-    <i ng-if="!LightBox.imageUrl" class="fa fa-circle-o-notch fa-spin fa-4x fa-fw margin-bottom" style="position: absolute;top: 40%;left: 47%;z-index:100"></i>
-        <span class="sr-only">Loading...</span>
+       <img lightbox-src="{{Lightbox.imageUrl}}" style="z-index:100;position:relative"> 
+        
+     <!--    <div id="loading-bar-container">
+        <div id="loading-bar-spinner"> -->
+
+     <!--    </div>
+        </div>
+        <span class="sr-only">Loading...</span>  -->
 
     <!-- video -->
     <div ng-if="Lightbox.isVideo(Lightbox.image)"
